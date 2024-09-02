@@ -1,0 +1,65 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{ae,lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage[indent=17pt]{parskip}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tocbibind}
+\usepackage{amsmath}
+\usepackage[export]{adjustbox}
+\usepackage[
+    style=iso-numeric,
+    pagetotal=true,
+    noenddot=true,
+    doi=true,
+    isbn=true,
+    url=true,
+    sorting=nyvt,
+    autopunct=false,
+    maxnames=2
+]{biblatex}
+\usepackage{csquotes}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\addbibresource{biblio.bib}
+\geometry{hmargin=1.5cm,vmargin=2.5cm}
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}
+
+}%ne pas toucher à espace au dessus, position de fermeture d'accolade faite exprès pour avoir bonne indentation après \mypragraph
+%\pagestyle{fancy}
+%\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+%\renewcommand{\headrulewidth}{1pt}
+%\fancyhead[C]{\textbf{page \thepage}} 
+%\fancyhead[L]{\leftmark}
+%\fancyhead[R]{machin}
+%\renewcommand{\footrulewidth}{1pt}
+%\fancyfoot[C]{\textbf{page \thepage}} 
+%\fancyfoot[L]{truc}
+%\fancyfoot[R]{\leftmark}
+
+\author{Gaël Germain}
+\title{L'île de Noirmoutier, un territore façonné par le tourisme}
+
+\begin{document}
+\maketitle
+\newpage
+\null
+\newpage
+\tableofcontents
+
+\include{introduction.tex}
+\include{traitement_des_photographies.tex}
+\include{conclusion.tex}
+\printbibliography[title=Bibliographie, heading=bibintoc]
+\listoffigures
+\listoftables
+\include{annexes}
+
+\end{document}
