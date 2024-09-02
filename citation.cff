@@ -1,7 +1,7 @@
 @software{template_ut2j,
   author = {Germain, Gaël},
   title = {{Modèle LaTeX pour dossiers étudiants}},
-  url = {},
+  url = {https://github.com/engaer14/Modele-dossier-ut2j},
   version = {},
   year = {2024}
 }
