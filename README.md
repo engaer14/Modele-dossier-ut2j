@@ -1,6 +1,8 @@
 # Modele-dossier-ut2j
 Modèle LaTeX pour les dossiers étudiants et mémoires, à destination première des étudiant·es de l'UT2J. Il est cependant tout à fait possible de modifier les en-têtes, images, titres, etc pour une réutilisation plus large.
 
+L'intérêt de LaTeX pour la réalisation de votre dossier ou mémoire est de vous permettre de vous concentrer sur la rédaction du fond de votre dossier, en laissant au logiciel le soin de gérer la forme de manière automatisée et, souvent, plus propre qu'avec un logiciel de traitement de texte standard. Le prix à payer est l'apprentissage des rudiments du language LaTeX pour donner au logiciel les instructions à suivre pour la mise en forme. Le but de ce template est de vous proposer justement une base avec la majorité des instructions nécessaires à la création d'un document type dossier ou mémoire étudiant, sur laquelle il ne vous restera plus qu'à insérer le fond de votre dossier. La quasi-totalité des instructions sont annotées d'aides pour vous guider dans leur modification potentielle et l'ajout de votre texte. Pour plus d'informations sur LaTeX et des guides, consultez https://fr.wikibooks.org/wiki/LaTeX
+
 L'utilisation, la modification et le partage du code du template dans le fichier "main.tex" et du code des fichiers associés dans le dépôt est libre, sauf utilisation commerciale. Son partage doit se faire dans les mêmes conditions (I.e. vous n'êtes pas autorisé·es à partager ce fichier ou des modifications de ce fichier en interdisant leur modification/partage, ou en autorisant son utilisation commerciale).
 L'utilisation des fichiers issus de la compilation du template et des fichiers associés (I.e. votre docmuent pdf issu de la compilation, qui formera votre dossier) est totalement libre.
 
