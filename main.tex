@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage{fancyhdr}
+\usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage[indent=17pt]{parskip}
@@ -14,51 +15,74 @@
 \usepackage{amsmath}
 \usepackage[export]{adjustbox}
 \usepackage[
-    style=iso-numeric,
-    pagetotal=true,
-    noenddot=true,
-    doi=true,
-    isbn=true,
-    url=true,
-    sorting=nyvt,
-    autopunct=false,
-    maxnames=2
+    style=iso-numeric, 
+    pagetotal=true,  
+    noenddot=true, 
+    doi=true,  
+    isbn=true, 
+    url=true, 
+    sorting=nyvt, 
+    autopunct=false, 
+    maxnames=2 
 ]{biblatex}
+\usepackage[toc, page]{appendix}
 \usepackage{csquotes}
 \usepackage[table]{xcolor}
 \usepackage{array}
 \addbibresource{biblio.bib}
 \geometry{hmargin=1.5cm,vmargin=2.5cm}
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}
+\renewcommand\appendixpagename{Annexes}
+\renewcommand\appendixtocname{Annexes}
 
-}%ne pas toucher à espace au dessus, position de fermeture d'accolade faite exprès pour avoir bonne indentation après \mypragraph
-%\pagestyle{fancy}
-%\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1pt} 
+\fancyhead[C]{} 
+\fancyhead[L]{\leftmark} 
+\fancyhead[R]{\textbf{page \thepage}} 
+\renewcommand{\footrulewidth}{1pt} 
+\fancyfoot[C]{} 
+\fancyfoot[L]{\textbf{page \thepage}} 
+\fancyfoot[R]{\leftmark} 
 
-%\renewcommand{\headrulewidth}{1pt}
-%\fancyhead[C]{\textbf{page \thepage}} 
-%\fancyhead[L]{\leftmark}
-%\fancyhead[R]{machin}
-%\renewcommand{\footrulewidth}{1pt}
-%\fancyfoot[C]{\textbf{page \thepage}} 
-%\fancyfoot[L]{truc}
-%\fancyfoot[R]{\leftmark}
-
-\author{Gaël Germain}
-\title{L'île de Noirmoutier, un territore façonné par le tourisme}
-
+\title{Titre du dossier}
+\author{Prénom NOM}
 \begin{document}
-\maketitle
+\makeatletter
+  \begin{titlepage}
+  \centering
+      \includegraphics[height=0.08\textheight]{images/Logo_univ_toulouse.jpg}
+      \hfill
+      \includegraphics[height=0.05\textheight]{images/logo_ut2j.jpg}\\
+      \vspace{2cm}
+      {\large \textsc{Département de NomDépartement}}\\
+      \textsc{Licence/Master NomFormation}\\
+    \vspace{2cm}
+      {\Huge \textbf{\@title}} \\
+    \vspace{0.5cm}
+      {\large \@author} \\
+      Sous l'encadrement de NomProf\\
+    \vfill
+      {\large\textbf{Dossier de télédetection/terrain/enqûetes/...}\\
+      \textit{Dans le cadre de l'UE XX0000X}}\\
+      \vspace*{\fill}
+      \@date
+  \end{titlepage}
+\makeatother
 \newpage
-\null
+\thispagestyle{empty}
+\null 
 \newpage
+\thispagestyle{empty}  
 \tableofcontents
-
-\include{introduction.tex}
-\include{traitement_des_photographies.tex}
-\include{conclusion.tex}
+\include{chapitre1.tex} 
+\include{chapitre2.tex}
+\include{chapitre3.tex}
 \printbibliography[title=Bibliographie, heading=bibintoc]
+\newpage
 \listoffigures
+\newpage
 \listoftables
 \include{annexes}
 
